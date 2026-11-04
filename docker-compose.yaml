@@ -1,0 +1,9 @@
+services:
+  forte-db:
+    image: bitnami/postgresql:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=pgdev
+      - POSTGRESQL_DATABASE=forte
