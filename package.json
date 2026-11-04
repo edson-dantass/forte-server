@@ -4,13 +4,16 @@
   "description": "API server for the Forte project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "fastify": "^5.12.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6"
   }
 }
