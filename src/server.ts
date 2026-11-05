@@ -1,11 +1,9 @@
 import fastify from 'fastify';
+import { registerUserController } from './infra/controllers/register-user-controller';
 
 const server = fastify();
 
-
-server.get('/', async (request, reply) => {
-  return { hello: 'world' };
-});
+server.post('/user', registerUserController);
 
 const start = async () => {
   try {
