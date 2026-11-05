@@ -7,3 +7,8 @@ services:
       - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_PASSWORD=pgdev
       - POSTGRESQL_DATABASE=forte
+    volumes:
+      - forte-db-data:/bitnami/postgresql
+
+volumes:
+  forte-db-data:
