@@ -4,7 +4,9 @@
   "description": "API server for the Forte project",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src/server.ts",
+    "start": "node dist/server.cjs"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,8 @@
     "@types/node": "^26.6.6",
     "@types/pg": "^8.23.1",
     "drizzle-kit": "^1.0.0-rc.5",
-    "tsx": "^4.23.15"
+    "tsup": "^9.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }
